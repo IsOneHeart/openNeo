@@ -16,7 +16,7 @@ public class FishBucketTest {
                 "234882305", "67110144", "117441025", "16778497", "101253888", "50660352", "918529", "2353440288", "918273",
                 "67108865", "917504", "459008", "67699456", "67371009"};
         FileCreater fc = new FileCreater(items);
-        fc.setPath("C:/Users/21290/AppData/Roaming/.minecraft/versions/1.20.1ZY/resourcepacks/StarVision JE/script/");
+        fc.setPath("your path");
         fc.setPropertiesStructure("""
                 type=item
                 matchItems=tropical_fish_bucket
