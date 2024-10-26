@@ -10,28 +10,28 @@ import java.util.List;
 
 public class ImageGridMergerTest {
     public static void main(String[] args) {
-        String potionPath = "C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\textures\\item\\potion"; // 替换为你的文件夹路径
-        String topLayerPath = "E:\\StudyE\\Java\\第11章 IO(输入输出)流\\top"; // 替换为你的顶部图层文件夹路径
-        String resultImagePath = "E:\\StudyE\\Java\\第11章 IO(输入输出)流\\resultImage"; // 替换为你的结果图像文件夹路径
-        String arrowPath = "C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\textures\\item\\tipped_arrow";
-        String arrowTopLayerPath = "E:\\StudyE\\Java\\第11章 IO(输入输出)流\\top2";
-        String arrowResultPath = "E:\\StudyE\\Java\\第11章 IO(输入输出)流\\resultImage2";
+        String potionPath = "your path";
+        String topLayerPath = "your path";
+        String resultImagePath = "your path";
+        String arrowPath = "your path";
+        String arrowTopLayerPath = "your path";
+        String arrowResultPath = "your path";
 
         List<File> potionResultFiles = ImageGridMerger.getLayeredImage(potionPath, topLayerPath, resultImagePath);
         List<File> arrowResultFiles = ImageGridMerger.getLayeredImage(arrowPath, arrowTopLayerPath, arrowResultPath);
         System.out.println("Generated " + potionResultFiles.size() + " images.");
-        String enchantedBookPath = "E:\\StudyE\\Java\\第11章 IO(输入输出)流\\pngs";
-        String nameTagPath = "C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\optifine\\cit\\name_tag";
-        String suspiciousStewPath = "C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\optifine\\cit\\suspicious_stew";
-        String potteryPath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\script\\image\\pottery";
-        String spawnEggPath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\textures\\item\\spawn_eggs";
-        String goatHornpath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\optifine\\cit\\goat_horn";
-        String paintingPath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\optifine\\cit\\painting";
-        String totemPath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\optifine\\cit\\totem";
-        String bannerPatternPath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\textures\\item\\banner_pattern";
-        String tropicalFishBucketPath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\optifine\\cit\\tropical_fish_bucket";
-        String axolotlBucketPath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\optifine\\cit\\axolotl_bucket";
-        String mapPath="C:\\Users\\21290\\AppData\\Roaming\\.minecraft\\versions\\1.20.1ZY\\resourcepacks\\StarVision JE\\assets\\minecraft\\optifine\\cit\\map";
+        String enchantedBookPath = "your path";
+        String nameTagPath = "your path";
+        String suspiciousStewPath = "your path";
+        String potteryPath="your path";
+        String spawnEggPath="your path";
+        String goatHornpath="your path";
+        String paintingPath="your path";
+        String totemPath="your path";
+        String bannerPatternPath="your path";
+        String tropicalFishBucketPath="your path";
+        String axolotlBucketPath="your path";
+        String mapPath="your path";
 
         potionResultFiles.addAll(ImageGridMerger.getPngFilesInFolder(potionPath));
         potionResultFiles = ImageGridMerger.potionListSort(potionResultFiles);
@@ -43,7 +43,7 @@ public class ImageGridMergerTest {
         int tileHeight = 16; // 每个PNG图像的高度
 
         List<File> pngFiles = ImageGridMerger.getPngFilesInFolder(enchantedBookPath);
-        pngFiles.addAll(ImageGridMerger.getNameTagList(nameTagPath,"E:\\StudyE\\Java\\第11章 IO(输入输出)流\\jebNameTag"));
+        pngFiles.addAll(ImageGridMerger.getNameTagList(nameTagPath,"your path"));
         pngFiles.addAll(potionResultFiles);
         pngFiles.addAll(arrowResultFiles);
         pngFiles.addAll(ImageGridMerger.getPngFilesInFolder(suspiciousStewPath));
